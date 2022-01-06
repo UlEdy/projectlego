@@ -1,0 +1,174 @@
+body {
+	background: rgb(217, 218, 208);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	display: flex;
+	align-content: center;
+	margin: 2.5%;
+	height: 95%;
+	/* border: 10px red solid; */
+}
+.back {
+	position: fixed;
+	background: whitesmoke;
+	border-radius: 50px;
+	align-self: center;
+	z-index: -1;
+	height: 95%;
+	width: 95%;
+}
+.content {
+	overflow: auto;
+	border-radius: 50px;
+	height: 95vh;
+}
+header {
+	display: flex;
+	justify-content: center;
+}
+header > img {
+	margin-top: 10px;
+	width: 100px;
+}
+ul {
+	padding-inline-start: 0px;
+	list-style-type: none;
+}
+li {
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 30px;
+}
+a {
+	text-decoration: none;
+	color: rgb(172, 164, 164);
+	font-weight: bold;
+	white-space: nowrap;
+	text-shadow: 1px 1px rgb(186, 186, 186);
+}
+a:hover {
+	color: rgb(213, 70, 70);
+}
+.button {
+	display: inline-block;
+	color: whitesmoke;
+	white-space: nowrap;
+	background: rgb(213, 70, 70);
+	padding: 20px;
+	border-radius: 5px;
+}
+.button:hover {
+	background: rgb(172, 164, 164);
+}
+.text {
+	padding: 5%;
+}
+h4 {
+	text-align: justify;
+}
+h1 > span {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-shadow: 2px 2px 0 rgb(208, 202, 202), 4px 4px 2px rgb(216, 120, 120);
+	color: rgb(213, 70, 70);
+}
+#lego1,
+#video {
+	display: none;
+}
+footer {
+	flex-direction: column;
+	padding: 1em;
+	background: rgb(213, 70, 70);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+footer > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: flex-start;
+	padding: 4%;
+}
+.small {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 50px;
+}
+
+.small > h4 {
+	padding-left: 10px;
+}
+footer > div > p {
+	text-align: justify;
+	align-self: flex-start;
+}
+.lego-pic {
+	height: 10vh;
+}
+/* My RWD on tablet*/
+@media screen and (min-width: 768px) {
+	.content {
+		/* border: blue 2px solid; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	nav > ul {
+		margin: 0 5%;
+	}
+	li {
+		flex: 1;
+		font-size: 15px;
+		margin-top: 0;
+		margin-left: 5%;
+	}
+	a {
+		display: flex;
+		align-items: center;
+	}
+	.button-order {
+		flex: 3;
+	}
+	br {
+		display: none;
+	}
+	.text {
+		display: flex;
+		padding: 33px;
+	}
+	#lego1 {
+		display: inherit;
+		align-self: center;
+		margin: 3%;
+		height: 30vh;
+	}
+	#video {
+		display: inherit;
+		width: 30px;
+		margin-right: 5px;
+		padding: 0;
+	}
+	footer {
+		display: flex;
+		align-content: space-around;
+		flex-direction: row;
+	}
+	footer > div {
+		align-self: flex-start;
+		padding: 15px;
+		flex: 1;
+	}
+	.lego-pic {
+		height: 5vh;
+	}
+}

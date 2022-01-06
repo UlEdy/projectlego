@@ -1,0 +1,107 @@
+body {
+	background: rgb(217, 218, 208);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 2.5%;
+	align-content: center;
+	/* border: 10px red solid; */
+	height: 95%;
+}
+.back {
+	position: fixed;
+	/* box-sizing: border-box; */
+	background: whitesmoke;
+	border-radius: 50px;
+	height: 95%;
+	width: 95%;
+	z-index: -1;
+	align-self: center;
+}
+header > img {
+	margin-top: 10px;
+}
+.content {
+	height: 95vh;
+	overflow: auto;
+	border-radius: 50px;
+}
+header {
+	display: flex;
+	justify-content: center;
+}
+header > img {
+	width: 100px;
+	/* order: 1; */
+}
+nav {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	/* order: 0; */
+}
+
+ul {
+	/* display: flex; */
+	flex-direction: column;
+	/* list-style-type: none; */
+	padding-inline-start: 0px;
+}
+li {
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 30px;
+}
+a {
+	text-decoration: none;
+	color: rgb(172, 164, 164);
+	font-weight: bold;
+	text-shadow: 1px 1px rgb(186, 186, 186);
+}
+a:hover {
+	color: rgb(213, 70, 70);
+}
+.button {
+	display: inline-block;
+	background: rgb(213, 70, 70);
+	padding: 20px;
+	border-radius: 25px;
+}
+.button:hover {
+	background: rgb(172, 164, 164);
+}
+h4 {
+	text-align: justify;
+}
+.content {
+	/* display: flex; */
+	flex-direction: column;
+}
+#lego1 {
+	display: none;
+}
+footer {
+	/* display: flex; */
+	flex-direction: column;
+	padding: 1em;
+	background: rgb(213, 70, 70);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+footer > div {
+	display: flex;
+	/* flex-direction: row; */
+	flex-wrap: wrap;
+	justify-content: center;
+}
+footer > div > h4 {
+	padding-left: 10px;
+	/* text-align: center; */
+}
+.lego-pic {
+	height: 10vh;
+}
