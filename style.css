@@ -3,6 +3,7 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin: 0;
 	padding: 0;
+	overflow: hidden; /*zapytać o to*/
 }
 #wrapper {
 	display: flex;
@@ -21,13 +22,16 @@ body {
 	width: 95%;
 }
 .content {
+	box-sizing: border-box;
 	overflow: auto;
 	border-radius: 50px;
 	height: 95vh;
+	margin: 0;
 }
 header {
 	display: flex;
 	justify-content: center;
+	padding-top: 5%;
 }
 header > img {
 	margin-top: 10px;
@@ -80,13 +84,17 @@ h1 > span {
 	display: none;
 }
 footer {
-	flex-direction: column;
+	/* flex-direction: column; */
 	padding: 1em;
 	background: rgb(213, 70, 70);
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
-footer > div {
+#end {
+	display: flex;
+	flex-direction: column;
+}
+#end > div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
@@ -118,23 +126,26 @@ footer > div > p {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+	header >img {
+		width: 150px;
+	}
 	ul {
 		display: flex;
-		flex-direction: row;
+		/* flex-direction: row; */
 		align-items: center;
 	}
 	nav > ul {
 		margin: 0 5%;
 	}
 	li {
-		flex: 1;
-		font-size: 15px;
+		/* flex: 1; */
+		font-size: 25px;
 		margin-top: 0;
-		margin-left: 5%;
+		margin-right: 5%;
 	}
 	a {
 		display: flex;
-		align-items: center;
+		/* align-items: center; */
 	}
 	.button-order {
 		flex: 3;
@@ -144,31 +155,95 @@ footer > div > p {
 	}
 	.text {
 		display: flex;
-		padding: 33px;
+		padding: 0px 33px;
+	}
+	#text2 {
+		/* box-sizing: border-box; */
+		/* padding: 0px 3%; */
 	}
 	#lego1 {
 		display: inherit;
+		box-sizing: border-box;
 		align-self: center;
-		margin: 3%;
-		height: 30vh;
+		padding: 5%;
+		height: 35vh;
 	}
 	#video {
 		display: inherit;
 		width: 30px;
 		margin-right: 5px;
-		padding: 0;
+		/* padding: 0; */
 	}
-	footer {
+	#end {
 		display: flex;
-		align-content: space-around;
+		/* align-content: space-around; */
 		flex-direction: row;
 	}
-	footer > div {
-		align-self: flex-start;
+	#end > div {
+		/* align-self: flex-start; */
 		padding: 15px;
 		flex: 1;
 	}
 	.lego-pic {
-		height: 5vh;
+		height: 50px;
 	}
 }
+@media screen and (min-width: 992px) {
+	.content {
+		border: blue 2px solid;
+		/* display: flex; */
+		/* flex-direction: column; */
+		/* justify-content: space-between; */
+	}
+	#navigation {
+		display: flex;
+		justify-content: center;
+		padding: 5% 10% 0 10%;
+	}
+	nav {
+		display: flex;
+		/* flex-direction: row; */
+		align-self: center;
+		/* align-content: center; */
+		/* justify-content: center; */
+		flex: 3;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		flex:1;
+		padding:0;
+	}
+	header > img {
+		align-self: center;
+		margin: 0;
+		width: 100px;
+	}
+	ul {
+		display: flex;;
+		flex:1;
+		/* flex-direction: row; */
+	}
+	li {
+		flex:1;
+		font-size: 20px;;
+	}
+	.button-order {
+		flex: 4;
+		margin: 0
+
+	}
+	#text2 {
+		padding: 5% 0 0 10%;
+		
+	}
+	#lego1 {
+		height: 75%;
+		padding-top: 0;
+	}
+	#end {
+		padding:0 10%;
+	}
+
+}
+
