@@ -84,7 +84,6 @@ h1 > span {
 	display: none;
 }
 footer {
-	/* flex-direction: column; */
 	padding: 1em;
 	background: rgb(213, 70, 70);
 	border-bottom-left-radius: 25px;
@@ -131,21 +130,18 @@ footer > div > p {
 	}
 	ul {
 		display: flex;
-		/* flex-direction: row; */
 		align-items: center;
 	}
 	nav > ul {
 		margin: 0 5%;
 	}
 	li {
-		/* flex: 1; */
 		font-size: 25px;
 		margin-top: 0;
 		margin-right: 5%;
 	}
 	a {
 		display: flex;
-		/* align-items: center; */
 	}
 	.button-order {
 		flex: 3;
@@ -156,10 +152,6 @@ footer > div > p {
 	.text {
 		display: flex;
 		padding: 0px 33px;
-	}
-	#text2 {
-		/* box-sizing: border-box; */
-		/* padding: 0px 3%; */
 	}
 	#lego1 {
 		display: inherit;
@@ -172,15 +164,12 @@ footer > div > p {
 		display: inherit;
 		width: 30px;
 		margin-right: 5px;
-		/* padding: 0; */
 	}
 	#end {
 		display: flex;
-		/* align-content: space-around; */
 		flex-direction: row;
 	}
 	#end > div {
-		/* align-self: flex-start; */
 		padding: 15px;
 		flex: 1;
 	}
@@ -190,10 +179,11 @@ footer > div > p {
 }
 @media screen and (min-width: 992px) {
 	.content {
-		border: blue 2px solid;
-		/* display: flex; */
-		/* flex-direction: column; */
-		/* justify-content: space-between; */
+		/* border: blue 2px solid; */
+		border-radius: 100px;
+	}
+	.back {
+		border-radius: 100px;
 	}
 	#navigation {
 		display: flex;
@@ -202,10 +192,7 @@ footer > div > p {
 	}
 	nav {
 		display: flex;
-		/* flex-direction: row; */
 		align-self: center;
-		/* align-content: center; */
-		/* justify-content: center; */
 		flex: 3;
 	}
 	header {
@@ -222,7 +209,6 @@ footer > div > p {
 	ul {
 		display: flex;;
 		flex:1;
-		/* flex-direction: row; */
 	}
 	li {
 		flex:1;
@@ -231,19 +217,18 @@ footer > div > p {
 	.button-order {
 		flex: 4;
 		margin: 0
-
 	}
 	#text2 {
 		padding: 5% 0 0 10%;
-		
 	}
 	#lego1 {
 		height: 75%;
 		padding-top: 0;
 	}
+	footer {
+		border-bottom-left-radius: 100px;
+		border-bottom-right-radius: 100px;
 	#end {
 		padding:0 10%;
 	}
-
 }
-
